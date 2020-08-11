@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:ital,wght@1,900|Oswald|Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: black!important;
+  overflow-x: hidden;
+  transition: 2s opacity;
+  background-color: #07070A;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body:fade {
+  opacity: 0;
+  transition: none;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 6.5rem;
+}
+
+.offset2:before {
+  display: block;
+  content: "";
+  height: 3.5rem;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background-color: rgba(0, 0, 0, 0.6)!important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar-nav li{
+  padding-right: 1.4rem;
+  float: right;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+/* Nav Hover */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #09778A;
+  transition: all 300ms ease;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.home-inner {
+  background: url(../img/bg.png) no-repeat 0 0;
+}
+
+.home-logo {
+  position: relative!important;
+  display: flex;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px black solid;
+}
+
+.homepage {
+  display: flex;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo-wrap {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  height: 100%;
+  top: 0;
+/*  left: 48%;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.profile-wrap {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.profile-wrap img {
+  border-radius: 50%;
+}
+
+.job-wrap {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  height: 100%;
+  top: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.job-wrap h1 {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  padding-bottom: 5px;
+  border: 2px black solid;
+  font-size: 45px;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.name-wrap {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  height: 100%;
+  top: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.name-wrap h1 {
+  padding: 2px 15px;
+  border: 2px black solid;
+  padding-bottom: 5px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, .5);
+  font-weight: 600;
+}
+
+.downarrow img {
+  height: 3.5rem;
+}
+
+.downarrow {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 86.5%;
+}
+
+.resume-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg, rgba(175, 175, 175, .65), rgba(211, 213, 212, .94) 50%, rgba(175, 175, 175, .65));
+}
+
+.uparrow {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 7.5%;
+}
+
+.uparrow img {
+  height: 3.5rem;
+  transform: rotate(180deg);
+}
+
+.top {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 15%;
+}
+
+.about-me {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  padding: 15px 20px;
+  border: 2px black solid;
+  height: 250px;
+}
+
+.middle {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  top: 45%;
+}
+
+.experience {
+  display: inline-block;
+  width: 29%;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px black solid;
+}
+
+.experience h3 {
+  font-size: 20px;
+}
+
+.experience h1, .about-me h1 {
+  font-weight: bold;
+}
+
+.bottom {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  top: 88%;
+}
+
+.resume-button form button {
+  background: transparent;
+  border: 2px black solid;
+  width: 400px;
+  height: 75px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.resume-button form button:hover {
+  background: rgb(125, 125, 125);
+  color: black;
+  border: 2px black solid;
+  width: 400px;
+  height: 75px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer-wrap {
+  height: 10vh;
+  background-image: linear-gradient(white, rgba(220, 220, 220, .9), white);
+  border-top: black 2px solid;
+}
+
+.footer-icons {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.footer-icons a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+}
